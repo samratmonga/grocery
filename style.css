@@ -14,6 +14,9 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+h4{
+  margin: 0;
+}
 
 .top-bar {
   background: #6d9dbb;
@@ -209,7 +212,7 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+
   object-fit: cover;
   border-radius: 30px;
   margin-top: 30px;
@@ -722,6 +725,8 @@ body {
   border: 1px solid black;
   width: 256px;
   height: 168px;
+  border-radius: 25px;
+
 }
 
 .section-5 .swiper-slide>img {
@@ -733,6 +738,9 @@ body {
   color: var(--primaryClr);
 
 
+}
+.sec-5-heading {
+  padding-bottom: 15px;
 }
 
 .for-headings {
@@ -857,6 +865,7 @@ body {
 .sec-7-headings {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .personalised-btn {
@@ -925,7 +934,7 @@ body {
 .its-sec-8-div::after {
   content: '';
   position: absolute;
-  background: url(Images/subscribe.svg);
+
   width: 40px;
   height: 40px;
   background-color: var(--primaryClr);
@@ -1056,6 +1065,27 @@ svg#Layer_1 {
   margin-top: -0.5rem;
 }
 
+.product-box.cart:hover {
+  background-color: var(--primaryClr);
+  color: #fff;
+}
+
+.des-title {
+  padding-top: 10px;
+}
+
+.navbar-expand-lg {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.lnk {
+  color: #000;
+  text-decoration: none;
+}
+.sec-7-card-img {
+  text-align: center;
+}
+
 /* media query start */
 
 @media (width <=992px) {
@@ -1068,14 +1098,50 @@ svg#Layer_1 {
     font-size: 15px;
   }
 
+  .sec-3-img1.img-fluid {
+    margin-bottom: 20px;
+  }
+
+  .navbar-expand-lg {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+  }
+
+  .custom-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .its-sec-8-div .submit {
+    background-color: #4abfd9;
+    padding: 16px 40px;
+    position: absolute;
+    top: 53px;
+    right: 12px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+}
 
 }
 
+
+
 @media (width <=576px) {
   .section-1 .swiper-slide {
-    width: 350px;
+
     height: 350px;
     margin-right: 30px;
+  }
+
+  .custom-col {
+    display: flex;
+    justify-content: center;
   }
 
   .section-1 .small-swiper {
@@ -1108,6 +1174,20 @@ svg#Layer_1 {
 
     padding: 14px 27px;
 
+  }
+
+  .sec-3-img1.img-fluid {
+    margin-bottom: 0px;
+  }
+
+  .navbar-expand-lg {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+  }
+
+  .navbar-expand-lg {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
   }
 
   .swiper-slide-context>.swiper-img-heading>h2 {
@@ -1151,12 +1231,14 @@ svg#Layer_1 {
     background-color: var(--primaryClr);
     padding: 70px 30px;
   }
+
   .section-8 .description>p {
     font-size: 22px;
     color: #fff;
     float: end;
     padding-left: 45px;
-}
+  }
+
   .its-sec-8-div .submit {
     background-color: #4abfd9;
     padding: 16px 40px;
@@ -1171,15 +1253,18 @@ svg#Layer_1 {
     width: 92%;
     text-align: center;
   }
+
   .its-image>.offer {
     font-size: 41px;
     color: #fff;
     font-weight: 800;
-}
-i.fa-solid.fa-cart-shopping {
-  font-size: 30px;
-}
-.btn-sm-square {
+  }
+
+  i.fa-solid.fa-cart-shopping {
+    font-size: 30px;
+  }
+
+  .btn-sm-square {
     padding: 0;
     display: flex;
     align-items: center;
@@ -1187,15 +1272,37 @@ i.fa-solid.fa-cart-shopping {
     width: 64px;
     height: 0;
     font-weight: normal;
-}
-.its-first-row {
-  padding-bottom: 10px;
-}
-.its-first-row i {
-  font-size: 25px;
+  }
 
-}
+  .its-first-row {
+    padding-bottom: 10px;
+  }
 
+  .its-first-row i {
+    font-size: 25px;
+
+  }
+
+  .sec-2-heading {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .section-8 {
+    background-color: var(--primaryClr);
+    padding: 36px 4px 94px 0;
+  }
+
+  .section-8 .description>p {
+    font-size: 21px;
+    color: #fff;
+    float: end;
+    padding-left: 29px;
+  }
+
+  .sec-6-headings {
+    padding-top: 30px;
+  }
 }
 
 /* @media (max-width:992px) {
@@ -1209,3 +1316,20 @@ i.fa-solid.fa-cart-shopping {
   }
 
 } */
+
+@media screen and (min-width: 440px) and (max-width: 576px)  {
+  .its-sec-8-div .submit {
+    background-color: #4abfd9;
+    padding: 16px 40px;
+    position: absolute;
+    /* top: 0; */
+    /* right: 29%; */
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    right: 22px;
+    top: 115px !important;
+    width: 92%;
+    text-align: center;
+}
+}
